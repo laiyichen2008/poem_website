@@ -1,0 +1,335 @@
+* {
+    /* 为全局设置css样式 */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f0f8ff;
+    font-family: "宋体", sans-serif;
+    line-height: 1.6;
+    padding: 2rem;
+    min-height: 100vh;
+    /* display：flex 弹性盒子模型，一般搭配justify-content和align-items使用 */
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav {
+    text-align: center;
+}
+
+.main-nav h1 {
+    color: #2e8b57;
+    font-size: 3rem;
+}
+
+.main-nav h1:hover {
+    font-size: 3.2rem;
+    transition-timing-function: ease;
+    transition-duration: 1s;
+}
+
+.main-nav h1:before{
+    content: "❤";
+    position: relative;
+    right: 5px;
+}
+
+.main-nav h1:after{
+    content: "❤";
+    position: relative;
+    left: 5px;
+}
+
+
+#all-poem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+
+#all-poem li {
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+#all-poem li a{
+    text-decoration: none;
+    color: #696464;
+    font-weight: bold;
+
+}
+
+#all-poem span{
+    font-weight: bold;
+    font-family: "Times New Roman";
+}
+
+.number1 {
+    color: red;
+    
+}
+
+.number2 {
+    color: rgb(136, 136, 13);
+   
+}
+.number3 {
+    color: green;
+   
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.poem {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 64, 128, 0.1);
+    margin: 2rem;
+    position: relative;
+    /* 在class='poem'的子元素的位置都是相对的 */
+}
+
+.poem-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.poem-header h1 {
+    color: #2e8b57;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.author-info {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.dynasty {
+    color: #666;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.author-info h2 {
+    font-size: 1.4rem;
+    color: #4a4a4a;
+    font-weight: normal;
+}
+
+.poem-content {
+    margin: 2rem 0; 
+}
+
+.verse-group {
+    margin: 1.5rem 0;
+    padding-left: 2.5rem;
+    position: relative;
+}
+
+.verse {
+    font-size: 1.2rem;
+    line-height: 2;
+    color: #333;
+    /* transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+    transition-delay: 1s; */
+    transition: all 0.3s ease;
+}
+
+.verse:hover {
+    color: #2e8b57;
+    font-size: 1.5rem;
+    transform: translateY(10px);
+    /* 水平移动10px */
+}
+
+.verse-group:before {
+    /* 浮动元素 */
+    position: absolute;
+    content: "“";
+    left: 0;
+    /* 问题poem会在盒子模型content外面 */
+    top: 2.5rem;
+    font-size: 2rem;
+    color: rgb(216, 142, 44);
+}
+
+.divider {
+    /* border: #2e8b57 solid; */
+    height: 5px;
+    margin: 30px;
+    background: linear-gradient(90deg,transparent,rgba(46,139,87,0.3),transparent);
+}
+
+.poem-illustration {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.poem-illustration img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.poem-illustration img:hover {
+    transform: scale(1.02);
+}
+
+figcaption {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 0.5rem;
+    
+}
+figcaption:hover {
+    color: #2e8b57;
+    font-size: 1rem;
+    transition-delay:1s;
+    transition-timing-function: ease;
+}
+
+.poem-footer {
+    border-top: solid rgba(78,77,77,0.1) 1px;
+    padding-top: 25px;
+    margin-top: 3rem;
+}
+
+.meta-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    color: #666;
+}
+
+time {
+    font-family: "Times New Roman";
+    font-style: italic;
+}
+
+.contributor span {
+    display: block;
+    line-height: 1.4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
